@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS cards (
+    card_number BIGINT(20) PRIMARY KEY,
+    balance DECIMAL(15,2) NOT NULL,
+    password VARCHAR (14) NOT NULL,
+    status BOOLEAN DEFAULT FALSE,
+    creation_date TIMESTAMP NOT NULL,
+    change_date TIMESTAMP NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
